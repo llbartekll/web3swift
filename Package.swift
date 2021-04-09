@@ -4,17 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "Web3swift",
-    platforms: [
-        .iOS(SupportedPlatform.IOSVersion.v9)
-    ],
-    
-    products: [
+  name: "Web3swift",
+  platforms: [
+    .iOS(SupportedPlatform.IOSVersion.v9)
+  ],
+  products: [
     // Products define the executables and libraries produced by a package, and make them visible to other packages.
     .library(name: "web3swift", targets: ["web3swift"]),
     ],
   dependencies: [
-    .package(url: "https://github.com/attaswift/BigInt.git", from: "5.0.0"),
+    .package(url: "https://github.com/attaswift/BigInt.git", from: "3.1.0"),
     .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.8.4"),
     .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.1.0"),
     .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.0.0"),
